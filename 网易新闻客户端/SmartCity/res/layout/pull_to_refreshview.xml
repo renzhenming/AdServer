@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    
+    <FrameLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        >
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/headview_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/common_listview_headview_red_arrow"
+            />
+        <ProgressBar 
+            android:visibility="invisible"
+            android:indeterminateDrawable="@drawable/custom_progress"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/headview_progress"
+            />
+    </FrameLayout>
+    <LinearLayout 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView 
+            android:id="@+id/head_refresh_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下拉刷新"
+            />
+       <TextView 
+           android:id="@+id/head_refresh_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2011-11-11 9:00"
+            />
+    </LinearLayout>
+
+</LinearLayout>

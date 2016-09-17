@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.smartcity.view.NoScrollViewPager
+        android:id="@+id/fragment_content_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/fragment_content_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bottom_tab_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            
+            android:id="@+id/fragment_content_home"
+            style="@style/Fragment_Content_BottomStyle"
+            android:drawableTop="@drawable/selector_radiogroup_home"
+            android:text="首页" />
+        <RadioButton
+            android:id="@+id/fragment_content_newscenter"
+            style="@style/Fragment_Content_BottomStyle"
+            android:drawableTop="@drawable/selector_radiogroup_newscenter"
+            android:text="新闻中心" />
+        <RadioButton
+            android:id="@+id/fragment_content_smartservice"
+            style="@style/Fragment_Content_BottomStyle"
+            android:drawableTop="@drawable/selector_radiogroup_smartservice"
+            android:text="智慧服务" />
+        <RadioButton
+            android:id="@+id/fragment_content_gov"
+            style="@style/Fragment_Content_BottomStyle"
+            android:drawableTop="@drawable/selector_radiogroup_gov"
+            android:text="政务" />
+        <RadioButton
+            android:id="@+id/fragment_content_setting"
+            style="@style/Fragment_Content_BottomStyle"
+            android:drawableTop="@drawable/selector_radiogroup_setting"
+            android:text="设置" />
+    </RadioGroup>
+
+</LinearLayout>

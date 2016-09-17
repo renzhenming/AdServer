@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 向导页 -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+ 	<!-- 首页底栏字体颜色  -->  
+    <color name="red">#ff0000</color>
+ 
+</resources>

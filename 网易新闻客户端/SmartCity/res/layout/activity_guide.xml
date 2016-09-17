@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context="com.example.smartcity.activity.GuideActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/guilde_viewpager"
+         />
+    <Button 
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:layout_width="@dimen/dimen_60"
+        android:layout_height="@dimen/dimen_40"
+        android:id="@+id/guide_confirm"
+        android:text="@string/end_the_guide"
+        android:background="@drawable/selector_guide_end"
+        android:textColor="@color/selector_guide_text"
+        android:visibility="gone"
+        />
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_15"
+	    >
+    <LinearLayout
+        android:id="@+id/guide_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:orientation="horizontal" />
+    <ImageView 
+        android:id="@+id/guide_dotred"
+        android:layout_width="15px"
+        android:layout_height="15px"
+        android:background="@drawable/dot_focus"
+        />
+</RelativeLayout>
+
+</RelativeLayout>
